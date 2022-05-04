@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN-HELPER</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!-- IMPORTANDO O ARQUIVO CSS PARA DENTRO DO INDEX HTML-->
+    <script src="./js/index.js" defer></script> <!-- IMPORTANDO O ARQUIVO JAVASCRIPT PARA DENTRO DO INDEX HTML-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- IMPORTANDO A FONTE POPPINS PARA DENTRO DO INDEX HTML-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- IMPORTANDO A FONTE POPPINS PARA DENTRO DO INDEX HTML-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- IMPORTANDO A FONTE POPPINS PARA DENTRO DO INDEX HTML-->
+
+    <script src="https://kit.fontawesome.com/c358fe95a4.js" crossorigin="anonymous" defer></script> <!-- IMPORTANDO O KIT DO  FONT AWESOME PARA DENTRO DO INDEX HTML-->
+</head>
+
+<body>
+    <header>
+        <h1>LOGIN HELPER</h1>
+    </header>
+    <main>
+        <form>
+            <section class="inputs-container">
+                <input type="email" placeholder="exemple@gmail.com">
+
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="********">
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>
+                    <i class="fas fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                </div>
+            </section>
+            
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox">
+                    <span>Lembrar Senha</span>
+                </div>
+
+                <a href="#">Esqueceu sua senha?</a>
+            </section>
+
+            <button id="btn-login">Login</button>
+
+            <section class="links-container">
+                <span>Ou entre com:</span>
+
+                <aside>
+                    <a href="#"><i class="fab fa-google-plus-square google"></i></a>
+                    <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
+                </aside>
+            </section>
+
+            <footer>
+                <hr>
+                <span>Ainda não possui uma conta? <a href="#">CADASTRAR-SE</a></span>
+            </footer>
+        </form>
+    </main>
+</body>
+</html>
